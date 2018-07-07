@@ -18,7 +18,7 @@ with SAS7BDAT('sales.sas7bdat') as file:
     df_sas=file.to_data_frame()
 
 # Print head of DataFrame
-df_sas.head()
+print(df_sas.head())
 
 # Plot histogram of DataFrame features (pandas and pyplot already imported)
 pd.DataFrame.hist(df_sas[['P']])
